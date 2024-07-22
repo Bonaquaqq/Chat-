@@ -1,4 +1,3 @@
-
 #ifndef USER_H
 #define USER_H
 
@@ -12,7 +11,6 @@ private:
     std::vector<std::string> messageHistory;
 
 public:
-    
     User() {}
 
     User(const std::string& _name) : name(_name) {}
@@ -37,7 +35,7 @@ public:
 
     void removeMessage(int index) {
         if (index < 0 || index >= static_cast<int>(messageHistory.size())) {
-            std::cout << "Îøèáêà: Íåêîððåêòíûé èíäåêñ ñîîáùåíèÿ." << std::endl;
+            std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ°: Ð½ÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ." << std::endl;
             return;
         }
 
@@ -53,3 +51,4 @@ public:
 };
 
 #endif // USER_H
+
