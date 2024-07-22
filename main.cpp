@@ -9,18 +9,18 @@ int main() {
     chat.addUser("Bob");
     chat.addUser("Charlie");
 
-    chat.sendMessage("Alice", "Bob", "Привет, как дела?");
-    chat.sendMessage("Bob", "Alice", "Привет! У меня всё отлично, спасибо!");
-    chat.sendMessage("Bob", "Charlie", "Привет, Чарли!");
-    chat.sendMessage("Charlie", "Alice", "Привет, Алиса!");
+    chat.sendMessage("Alice", "Bob", "РџСЂРёРІРµС‚, РєР°Рє РґРµР»Р°?");
+    chat.sendMessage("Bob", "Alice", "РџСЂРёРІРµС‚! РЈ РјРµРЅСЏ РІСЃС‘ РѕС‚Р»РёС‡РЅРѕ, СЃРїР°СЃРёР±Рѕ!");
+    chat.sendMessage("Bob", "Charlie", "РџСЂРёРІРµС‚, Р§Р°СЂР»Рё!");
+    chat.sendMessage("Charlie", "Alice", "РџСЂРёРІРµС‚, РђР»РёСЃР°!");
 
-    std::cout << "История сообщений для пользователя Bob:" << std::endl;
+    std::cout << "РСЃС‚РѕСЂРёСЏ СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Bob:" << std::endl;
     chat.displayMessageHistory("Bob");
 
-    std::cout << "Очистка истории сообщений для пользователя Bob..." << std::endl;
+    std::cout << "РћС‡РёСЃС‚РєР° РёСЃС‚РѕСЂРёРё СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Bob..." << std::endl;
     chat.clearMessageHistory("Bob");
 
-    std::cout << "История сообщений для пользователя Bob после очистки:" << std::endl;
+    std::cout << "РСЃС‚РѕСЂРёСЏ СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Bob РїРѕСЃР»Рµ РѕС‡РёСЃС‚РєРё:" << std::endl;
     chat.displayMessageHistory("Bob");
 
     return 0;
