@@ -1,4 +1,3 @@
-
 #ifndef CHAT_H
 #define CHAT_H
 
@@ -17,7 +16,7 @@ public:
 
     void sendMessage(const std::string& sender, const std::string& receiver, const std::string& message) {
         if (users.count(receiver) == 0) {
-            std::cout << "Îøèáêà: Ïîëó÷àòåëü íå ñóùåñòâóåò." << std::endl;
+            std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ°: Ğ¿Ğ¾Ğ»ÑƒÑ‡Ğ°Ñ‚ĞµĞ»ÑŒ Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½." << std::endl;
             return;
         }
 
@@ -29,7 +28,7 @@ public:
             users.at(name).displayMessageHistory();
         }
         else {
-            std::cout << "Ïîëüçîâàòåëü íå íàéäåí." << std::endl;
+            std::cout << "ĞŸĞ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒ Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½." << std::endl;
         }
     }
 
@@ -38,8 +37,7 @@ public:
             users.at(name).clearMessageHistory();
         }
     }
-
-   
 };
 
 #endif // CHAT_H
+
